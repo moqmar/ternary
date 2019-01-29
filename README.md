@@ -5,7 +5,7 @@
 Ternary expression for golang, to enjoy code-golf :golf:
 
 ```go
-port := ternary.String(os.Getenv("PORT"))("8080")
+port := ternary.String(os.Getenv("PORT")).Or("8080")
 // Returns "8080" if "PORT" == ""
 ```
 
