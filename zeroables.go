@@ -13,5 +13,5 @@ func (s ZeroableString) Or(def string) string {
 
 // String ...
 func String(orig string) func(string) string {
-	return ZeroableString(orig).Or
+	return ZeroableString(orig)
 }
